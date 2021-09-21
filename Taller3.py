@@ -85,3 +85,21 @@ def pto3 (h_obr):
             print(f'Pago por 40 horas o menos: {obr * 20}')
         elif obr > 40:
             print(f'Pago por cada una de las primeras horas: {40 * 20 + ((obr - 40) * 25)} ')
+
+# Punto 4
+
+def pto4 (ed_hom, ed_muj):
+    acu_hom = acu_muj = total = 0
+    for edad in ed_hom:
+        acu_hom += edad
+        total += edad
+    for edad in ed_muj:
+        acu_muj += edad
+        total += edad
+    
+    return {
+        "Promedio edad hombres": acu_hom / len(ed_hom),
+        "Promedio edad mujeres": acu_muj / len(ed_muj),
+        "Promedio edad general": total / (len(ed_hom) + len(ed_muj))
+    }
+
