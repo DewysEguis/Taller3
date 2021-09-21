@@ -128,3 +128,15 @@ def ejercicio6():
         else:
             print(f'BAJÓ {ultimo_peso - promedio_pesos}')
 
+# Punto 7
+
+def pto7(n_prod):
+    
+    tot = 0
+    for _ in range(n_prod):
+        val = int(input('Digite el precio del producto: '))
+        cant = int(input('Cantidad del producto: '))
+
+        tot += val * cant
+    return tot
+
