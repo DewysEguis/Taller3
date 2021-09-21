@@ -167,3 +167,26 @@ def pto8 (nu_entr, valor):
         "Categoria 4": edad4,
         "Categoria 5": edad5,
         }
+
+# Punto 9
+
+def pto9():
+    for i in range(1):
+        ven = int(input(f'{i} Valor vendido: '))
+
+        if ven <= 20000000:
+            print(f'Total vendido: {ven}')
+            print(f'Comision: {ven * 0.1}')
+        elif ven > 20000000 and ven < 40000000:
+            print(f'Total vendido: {ven}')
+            print(f'Comision: {ven * 0.15}')
+        elif ven >= 40000000 and ven < 80000000:
+            print(f'Total vendido: {ven}')
+            print(f'Comision: {ven * 0.2}')
+        elif ven >= 80000000 and ven < 160000000:
+            print(f'Total vendido: {ven}')
+            print(f'Comision: {ven * 0.25}')
+        elif ven > 160000000:
+            print(f'Total vendido: {ven}')
+            print(f'Comision: {ven * 0.3}')
+ 
