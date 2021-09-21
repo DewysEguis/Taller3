@@ -103,3 +103,12 @@ def pto4 (ed_hom, ed_muj):
         "Promedio edad general": total / (len(ed_hom) + len(ed_muj))
     }
 
+# Punto 5
+
+def pto5 (num):
+    men = num[len(num) - 1]
+    for n in num:
+        if n < men:
+            men = n
+    return men
+
