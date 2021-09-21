@@ -112,3 +112,19 @@ def pto5 (num):
             men = n
     return men
 
+# Punto 6
+
+def ejercicio6():
+    for i in range(5):
+        ultimo_peso = int(input('Digite su ultimo peso:'))
+        promedio_pesos = 0
+        for i in range(10):
+            promedio_pesos += int(input(f'Digite el peso de la bascula {i}:'))
+
+        promedio_pesos = promedio_pesos / 10
+
+        if promedio_pesos > ultimo_peso:
+            print(f'SUBIÓ {promedio_pesos - ultimo_peso}')
+        else:
+            print(f'BAJÓ {ultimo_peso - promedio_pesos}')
+
